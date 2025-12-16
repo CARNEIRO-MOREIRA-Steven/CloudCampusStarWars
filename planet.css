@@ -1,0 +1,57 @@
+.dashboard{
+    flex-direction: row;
+    gap: 50px;
+}
+.dashboard .planetes{
+    background-image: url('./space4.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 350px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    border: solid 2px #fff;
+}
+input{
+    border: none;
+    background-color: #000;
+    width: 100%;
+}
+select{
+    background-color: #000;
+    color: #fff;
+    padding: 5px;
+    border: solid 2px #fff;
+    width: fit-content;
+}
+.planete-search{
+    display: flex;
+    background-color: #000;
+    border: solid 2px #fff;
+    padding: 5px;
+}
+.planete-search img{
+    height: 20px;
+    width: auto;
+}
+thead tr{
+    background-color: #5f8bae;
+}
+tr{
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+    border-bottom: 2px solid #fff;
+}
+tbody tr{
+    border-bottom : solid 1px;
+    font-size: 14px;
+}
+.details{
+    padding: 15px;
+    border: solid 2px #fff;
+    color: #5f8bae;
+    height: fit-content;
+    flex: 1;
+}

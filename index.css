@@ -1,63 +1,3 @@
-html,body{
-    height: 100%;
-}
-body{
-    font-family: Roboto, sans-serif;
-    background-color: black;
-    display: flex;
-    flex-direction: column;
-}
-nav{
-    display: flex;
-    align-items: center;
-    border-bottom: #ffffff solid 2px;
-    border-top: #ffffff solid 2px;
-    padding: 15px 0;
-    height: 70px;
-}
-img{
-    width: 300px;
-}
-a{
-    text-decoration: none;
-    color: #ffffff;
-    text-transform: uppercase;
-    padding-left: 50px;
-}
-.navbar-left{
-    padding-top: 25px;
-    width: 150px;
-    border-right: solid 2px #fff;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 50px;
-}
-.navbar-left img{
-    height: 70px;
-    width: auto;
-    object-fit: cover;
-}
-.navbar-left a {
-    padding: 0;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-
-}
-.section-page{
-    display: flex;
-    flex: 1;
-    width: 100%;
-}
-.dashboard{
-    width: 95%;
-    flex: 1;
-    padding: 25px;
-    display: flex;
-    flex-direction: column;
-    gap: 100px;
-}
 .dashboard div{
     background-size: cover;
     background-position: center;
@@ -77,9 +17,6 @@ a{
 }
 .dashboard h2{
     color:#5F8BAE;
-    text-transform: uppercase;
-    font-size: 20px;
-    font-weight: 600;
 }
 .dashboard p{
     color: #ffffff;

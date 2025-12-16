@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planètes</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="./general.css">
+    <link rel="stylesheet" href="./planet.css">
+</head>
+<body>
+    <nav>
+        <a href="/"><img src="logo.png" alt=""></a>
+        <a href="/">Accueil</a>
+        <a href="">Prochaine mission</a>
+    </nav>
+    <section class="section-page">
+        <div class="navbar-left">
+            <a href="./planetes.html"><img src="./globe-white.svg"/>Planètes</a>
+            <a href=""><img src="./rocket.svg"/>Véhicules</a>
+            <a href=""><img src="./alien.svg"/>Personnes</a>
+        </div>
+        <section class="dashboard">
+            <aside class="planetes">
+                <h2>Planètes</h2>
+                <select name="" id="filter">
+                    <option value="">Par population</option>
+                    <img src="./bottom.svg">
+                </select>
+                <div class="planete-search">
+                <input type="search" id="search" name="" placeholder="Faites votre recherche" />
+                <img src="./search.svg" alt="">
+                </div>
+                <table>
+                    <thead>
+                        <th class="name">Nom</th>
+                        <th class="terrain">Terrain</th>
+                    </thead>
+                    <tbody class="tbody-planet">
+                        
+                    </tbody>
+                </table>
+                <p class="number-result"></p>
+            </aside>
+            <aside class="details">
+                <h3>Séléctionner le contenu à afficher !</h3>
+            </aside>
+        </section>
+    </section>
+</body>
+</html>
+<script src="planet.js"></script>
