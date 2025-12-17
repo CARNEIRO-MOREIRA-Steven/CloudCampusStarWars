@@ -4,21 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Star Wars</title>
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="general.css">
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/general.css">
+    <link rel="stylesheet" href="./css/index.css">
 </head>
 <body>
     <nav>
-        <a href="/"><img src="logo.png" alt=""></a>
-        <a href="/">Accueil</a>
+        <a href="./index.html"><img src="./images/logo.png" alt=""></a>
+        <a href="./index.html">Accueil</a>
         <a href="">Prochaine mission</a>
     </nav>
     <section class="section-page">
         <div class="navbar-left">
-            <a href="./planetes.html"><img src="./globe-white.svg"/>Planètes</a>
-            <a href=""><img src="./rocket.svg"/>Véhicules</a>
-            <a href=""><img src="./alien.svg"/>Personnes</a>
+            <a href="./planetes.html"><img src="./images/globe-white.svg"/>Planètes</a>
+            <a href="./vehicules.html"><img src="./images/rocket.svg"/>Véhicules</a>
+            <a href="./personnes.html"><img src="./images/alien.svg"/>Personnes</a>
         </div>
         <section class="dashboard">
             <div class="universe">
@@ -31,28 +31,28 @@
                 <p>Nous nous efforcons à archiver toutes nos trouvilles pour vous les partager autant que possible !</p>
                 <section>
                 <aside>
-                    <img src="./users.svg" alt="">
+                    <img src="./images/users.svg" alt="">
                     <div>
                     <h3>Nombre d'êtres vivants recensés</h3>
                     <p class="number-user"></p>
                     </div>
                 </aside>
                 <aside >
-                    <img src="./shuttle.svg" alt="">
+                    <img src="./images/shuttle.svg" alt="">
                     <div>
                     <h3>Nombre de véhicules recencés</h3>
                     <p class="number-vehicles"></p>
                     </div>
                 </aside>
                 <aside>
-                    <img src="./globe.svg" alt="">
+                    <img src="./images/globe.svg" alt="">
                     <div>
                     <h3>Nombre de planètes recencés</h3>
                     <p class="number-planets"></p>
                     </div>
                 </aside>
                 <aside>
-                    <img src="./clock.svg" alt="">
+                    <img src="./images/clock.svg" alt="">
                     <div>
                     <h3>Prochaine mission</h3>
                     <p class="date-mission"></p>
@@ -65,4 +65,6 @@
     </section>
 </body>
 </html>
-<script src="./index.js"></script>
+
+<script src="./js/api.js"></script>
+<script src="./js/index.js"></script>

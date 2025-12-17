@@ -4,33 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Planètes</title>
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="./general.css">
-    <link rel="stylesheet" href="./planet.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/general.css">
+    <link rel="stylesheet" href="./css/planet.css">
 </head>
 <body>
     <nav>
-        <a href="/"><img src="logo.png" alt=""></a>
-        <a href="/">Accueil</a>
+        <a href="./index.html"><img src="./images/logo.png" alt=""></a>
+        <a href="./index.html">Accueil</a>
         <a href="">Prochaine mission</a>
     </nav>
     <section class="section-page">
         <div class="navbar-left">
-            <a href="./planetes.html"><img src="./globe-white.svg"/>Planètes</a>
-            <a href=""><img src="./rocket.svg"/>Véhicules</a>
-            <a href=""><img src="./alien.svg"/>Personnes</a>
+            <a href="./planetes.html"><img src="./images/globe-white.svg"/>Planètes</a>
+            <a href="./vehicules.html"><img src="./images/rocket.svg"/>Véhicules</a>
+            <a href="./personnes.html"><img src="./images/alien.svg"/>Personnes</a>
         </div>
         <section class="dashboard">
             <aside class="planetes">
                 <h2>Planètes</h2>
                 <select name="" id="filter">
                     <option value="">Par population</option>
-                    <img src="./bottom.svg">
+                    <img src="./images/bottom.svg">
                 </select>
                 <div class="planete-search">
                 <input type="search" id="search" name="" placeholder="Faites votre recherche" />
-                <img src="./search.svg" alt="">
+                <img src="./images/search.svg" alt="">
                 </div>
+                <div class="table-planete">
                 <table>
                     <thead>
                         <th class="name">Nom</th>
@@ -40,13 +41,50 @@
                         
                     </tbody>
                 </table>
+            </div>
                 <p class="number-result"></p>
             </aside>
             <aside class="details">
-                <h3>Séléctionner le contenu à afficher !</h3>
+                <h3 class="last-title">Séléctionner le contenu à afficher !</h3>
+                <div class="details-planetes">
+                    <h3 class="title-planete"></h3>
+                    <p>Population <span class="population-planete"></span></p>
+                    <div class="details-planete-grid">
+                    <aside>
+                        <img src="./images/circle.svg" alt="">
+                        <div>
+                            <h4>Diamètre</h4>
+                            <p class="diametre-planete"></p>
+                        </div>
+                    </aside>
+                    <aside>
+                        <img src="./images/temperature.svg" alt="">
+                        <div>
+                            <h4>Climat</h4>
+                            <p class="climat-planete"></p>
+                        </div>
+                    </aside>
+                    <aside>
+                        <img src="./images/magnet.svg" alt="">
+                        <div>
+                            <h4>Gravité</h4>
+                            <p class="gravite-planete"></p>
+                        </div>
+                    </aside>
+                    <aside>
+                        <img src="./images/tree.svg" alt="">
+                        <div>
+                            <h4>Terrain</h4>
+                            <p class="terrain-planete"></p>
+                        </div>
+                    </aside>
+                    </div>
+                    <button>En savoir plus</button>
+                </div>
             </aside>
         </section>
     </section>
 </body>
 </html>
-<script src="planet.js"></script>
+<script src="./js/api.js"></script>
+<script src="./js/planet.js"></script>

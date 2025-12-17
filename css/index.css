@@ -8,11 +8,11 @@
     justify-content: space-between;
 }
 .universe{
-    background-image: url('./space1.jpg');
+    background-image: url('/images/space1.jpg');
     height: 100px;
 }
 .number{
-    background-image: url('./space4.jpg');
+    background-image: url('/images/space4.jpg');
     height: 350px;
 }
 .dashboard h2{

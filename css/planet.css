@@ -3,12 +3,14 @@
     gap: 50px;
 }
 .dashboard .planetes{
-    background-image: url('./space4.jpg');
+    background-image: url('/images/space4.jpg');
     background-size: cover;
     background-position: center;
     width: 350px;
     padding: 25px;
+    height: 550px;
     display: flex;
+    flex: 1.5;
     flex-direction: column;
     gap: 15px;
     border: solid 2px #fff;
@@ -35,6 +37,13 @@ select{
     height: 20px;
     width: auto;
 }
+.table-planete{
+    overflow: auto;
+    scrollbar-width: none;
+}
+table{
+    width: 100%;
+}
 thead tr{
     background-color: #5f8bae;
 }
@@ -53,5 +62,47 @@ tbody tr{
     border: solid 2px #fff;
     color: #5f8bae;
     height: fit-content;
-    flex: 1;
+    flex: 2;
+}
+.last-title.off{
+    display: none;
+}
+.details-planetes{
+    display: none;
+}
+.details-planetes.on{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.title-planete{
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 600;
+}
+.details-planete-grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.details-planete-grid p {
+    color: #fff;
+}
+.details-planetes button{
+    width: fit-content;
+    align-self: flex-end;
+    border: 2px solid #fff;
+    background-color: #000;
+    color: #fff;
+    padding: 10px 20px;
+}
+.details-planetes img{
+    height: 50px;
+    width: auto;
+}
+.details-planete-grid aside{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
