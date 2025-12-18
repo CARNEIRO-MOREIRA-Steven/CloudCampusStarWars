@@ -10,6 +10,8 @@ async function onInit(){
     console.log(planets)
 
     detailsPlanets(planets)
+
+    filterPopulationPlanet(planets)
 }
 
 async function getPlanets(urlPlanets){
@@ -88,31 +90,46 @@ async function detailsPlanets(planets){
         });   
     }    
 }
+async function filterPopulationPlanet(planets) {
+    const filter = document.getElementById('filter')
+    filter.addEventListener('click', function () {
+        const selectedValue = filter.value
+        console.log(selectedValue)
 
-// fetch(url)
-// .then((response) => response.json())
-// .then((data) => {
-//     const planetsDetails = data.results.map(planet => ({
-//         name : planet.name,
-//         terrain : planet.terrain}));
+        let filterPlanets = planets
 
-//     for (let i = 0; i < planetsDetails.length; i++){
-//         console.log(planetsDetails[i].name, planetsDetails[i].terrain);
-        
-//         const tr = document.createElement('tr')
+        if (selectedValue === '0 à 100.000') {
+            console.log('Sélection de 0 à 100.000')
+            filterPlanets = planets.filter(planet =>
+                planet.population >= 0 && planet.population <= 100000
+            )
 
-//         const namePlanets = document.createElement('th')
-//         namePlanets.textContent = planetsDetails[i].name;
+            console.log(filterPlanets)
+        } else if (selectedValue === '100.000 à 100.000.000') {
+            console.log('Sélection de 100.000 à 100.000.000')
+            filterPlanets = planets.filter(planet => planet.population
+                >= 100000 && planet.population <= 100000000
+            )
+            console.log(filterPlanets)
+        } else if (selectedValue === '+100.000.000') {
+            console.log('Sélection de +100.000.000')
+            filterPlanets = planets.filter(planet => planet.population
+                >= 100000000
+            )
+            console.log(filterPlanets)
+        } else if (selectedValue === 'unknown') {
+            console.log('unknown')
+            filterPlanets = planets.filter(planet => planet.population
+                === "unknown"
+            )
+            console.log(filterPlanets)
+        }
 
-//         const terrainPlanets = document.createElement('td')
-//         terrainPlanets.textContent = planetsDetails[i].terrain
+        const tbodyPlanet = document.querySelector('.tbody-planet')
+        tbodyPlanet.innerHTML = ''
 
-//         tr.appendChild(namePlanets)
-//         tr.appendChild(terrainPlanets)
-
-//         tbodyPlanet.appendChild(tr)
-//     }
-//     console.log(data)
-//     const numberPlanets = data.count
-//     
-// });
+        nameAndTerrainPlanets(filterPlanets)
+        detailsPlanets(filterPlanets)
+        numberPlanets(filterPlanets)
+    })
+}
