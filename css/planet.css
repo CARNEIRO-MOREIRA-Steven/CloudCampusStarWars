@@ -3,7 +3,7 @@
     gap: 50px;
 }
 .dashboard .planetes{
-    background-image: url('/images/space4.jpg');
+    background-image: url('../images/space4.jpg');
     background-size: cover;
     background-position: center;
     width: 350px;
